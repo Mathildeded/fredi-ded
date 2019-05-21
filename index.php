@@ -54,15 +54,8 @@ switch($uc){
 		include("controleurs/c_adminIdentification.php");
         break;
 	}
-    case 'faireImportCSV' :{
-		include("controleurs/c_importCSV.php");
-        break;
-	} 
-    case 'faireSupprAdh' :{
-		include("controleurs/c_supprAllAdh.php");
-        break;
-	}     
-        
+
+
     
 }
 
@@ -81,12 +74,6 @@ switch($uc){
 	}
     case 'modifLigne' :{
 		include("vues/v_modifLigneFrais.php");break;
-	}
-    case 'adminIdentification' :{
-		include("vues/v_adminIdentification.php");break;
-	}
-    case 'backoffice' :{
-		include("vues/v_backoffice.php");break;
 	}
         
         
