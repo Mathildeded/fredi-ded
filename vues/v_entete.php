@@ -12,7 +12,6 @@
         <?php
         if (!isset($_SESSION["sessid"])){
            echo "<a href='index.php?uc=identification'> Indentification </a>";
-            echo "<a href='index.php?uc=adminIdentification'> Administration </a>"; 
         }            
             
         else{
