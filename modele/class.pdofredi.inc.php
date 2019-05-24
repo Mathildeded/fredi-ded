@@ -102,18 +102,6 @@ class pdofredi{
             return true;
         }
 	}
-    public function ajoutAdhCSV($num,$sexe,$nom,$pren,$date,$adr,$cp,$ville){
-        $adr=str_replace("'", "\'",$adr);
-        $ok=false;
-        $req = "insert into adherents (num_licence,sexe,nom,prenom,date_naissance,adresse,code_postal,ville) values('$num','$sexe','$nom','$pren',STR_TO_DATE('$date', '%d/%m/%Y'),'$adr','$cp','$ville')"; 
-        $ok = pdofredi::$monPdo->exec($req);
-		return $ok;
-	}
-    public function deleteAllAdh(){
-        $ok=false;
-        $req = "delete from adherents;"; 
-        $ok = pdofredi::$monPdo->exec($req);
-		return $ok;
-	}
+
 }
 ?>
