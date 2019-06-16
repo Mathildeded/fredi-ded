@@ -8,5 +8,5 @@
     <a href="index.php?uc=afficheInscription">Vous n'avez pas de compte?</a>
 </table>
 </form>
-</div>
+</div> 
 
